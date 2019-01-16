@@ -28,7 +28,7 @@ public class LaermClient extends UnicastRemoteObject implements SensorObserver {
 			sensor0 = (Sensor)Naming.lookup("rmi://localhost:1099/sensors/0");
 			sensor0.register(client);
 			System.out.println("client(this): " + client.toString());
-			System.out.println(sensor0.toString());
+			System.out.println(sensor0.writeToConsole());
 
 //			sensor1 = new SensorImpl();
 //			Naming.lookup("rmi://localhost:1099/sensors/1");
@@ -53,6 +53,6 @@ public class LaermClient extends UnicastRemoteObject implements SensorObserver {
 
 	public void update(int value) throws RemoteException {
 		this.sensor0.setValue(value);
-		System.out.println(this.sensor0.toString());
+		System.out.println(this.sensor0.writeToConsole());
 	}
 }
