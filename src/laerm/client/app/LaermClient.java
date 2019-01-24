@@ -42,7 +42,7 @@ public class LaermClient extends UnicastRemoteObject implements SensorObserver {
 				frontend = (FrontendServer)Naming.lookup("rmi://localhost:9876/FrontendServer");
 				Double value = Double.valueOf(sensor.getValue());
 				frontend.receiveSensor(sensor.getId(), sensor.getX(), sensor.getY());
-				frontend.receiveValue(sensor.getId(), value);
+				frontend.receiveValue(value);
 			}
 
 //			LaermClient client = new LaermClient();
@@ -67,6 +67,6 @@ public class LaermClient extends UnicastRemoteObject implements SensorObserver {
 		System.out.println(sensorNew.writeToConsole());
 		Double dValue = new Double(value);
 		//frontend.receiveValue(dValue);
-		frontend.receiveValue(sensorNew.getId(), dValue);
+		frontend.receiveNewValue(sensorNew.getId(), dValue);
 	}
 }
