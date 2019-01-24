@@ -18,10 +18,10 @@
         <SOURCES />
       </library>
     </orderEntry>
-    <orderEntry type="module-library">
+    <orderEntry type="module-library" exported="">
       <library>
         <CLASSES>
-          <root url="jar://$USER_HOME$/Downloads/FrontendServer-master/FrontendServer-master/jaxrs/jaxrs/target/chatclient-1.0-SNAPSHOT.jar!/" />
+          <root url="jar://$USER_HOME$/Downloads/FrontendServer-master/jaxrs/jaxrs/target/chatclient-1.0-SNAPSHOT.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />
