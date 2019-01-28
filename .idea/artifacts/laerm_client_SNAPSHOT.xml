@@ -1,0 +1,10 @@
+<component name="ArtifactManager">
+  <artifact type="jar" build-on-make="true" name="laerm.client-SNAPSHOT">
+    <output-path>$PROJECT_DIR$/out/artifacts/laerm_client_SNAPSHOT</output-path>
+    <root id="archive" name="laerm.client-SNAPSHOT.jar">
+      <element id="module-output" name="laerm.client" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/../laermpegelMapService/out/artifacts/laermpegelMapService_jar/laermpegelMapService.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/../laermpegel/out/artifacts/sensors/laermpegel.jar" path-in-jar="/" />
+    </root>
+  </artifact>
+</component>

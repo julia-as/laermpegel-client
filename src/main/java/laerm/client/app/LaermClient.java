@@ -1,14 +1,16 @@
 package laerm.client.app;
 
+import de.htw.vt.FrontendServer;
+import de.htw.vt.Sensor;
+import de.htw.vt.SensorObserver;
+
 import java.rmi.Naming;
 import java.rmi.RemoteException;
 import java.rmi.server.UnicastRemoteObject;
 import java.util.HashMap;
 import java.util.Map;
 
-import de.htw.vt.Sensor;
-import de.htw.vt.SensorObserver;
-import org.htw.fiw.FrontendServer;
+
 
 
 public class LaermClient extends UnicastRemoteObject implements SensorObserver {

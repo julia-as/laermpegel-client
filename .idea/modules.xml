@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/laerm.client.iml" filepath="$PROJECT_DIR$/laerm.client.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/laerm.client.iml" filepath="$PROJECT_DIR$/.idea/laerm.client.iml" />
     </modules>
   </component>
 </project>
